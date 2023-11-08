@@ -1,2 +1,16 @@
-# olx_clone
-Este projeto é um clone da OLX desenvolvido em Flutter, permitindo compra e venda de itens locais via app móvel e web. Réplica funcionalidades chave da OLX, como listagem de anúncios e mensagens entre usuários, com a vantagem do desenvolvimento multiplataforma do Flutter, visando eficiência e uma interface amigável.
+# ssclassificados
+
+A new Flutter project.
+
+## Getting Started
+
+This project is a starting point for a Flutter application.
+
+A few resources to get you started if this is your first Flutter project:
+
+- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
+- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+
+For help getting started with Flutter development, view the
+[online documentation](https://docs.flutter.dev/), which offers tutorials,
+samples, guidance on mobile development, and a full API reference.

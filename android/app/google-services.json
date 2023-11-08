@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "987287348683",
+    "project_id": "crud-f69e4",
+    "storage_bucket": "crud-f69e4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:987287348683:android:98bc66cf8fcdef851c824e",
+        "android_client_info": {
+          "package_name": "com.example.ssclassificados"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCPnb-rmD_yMs2GrXMvblFBXhXHyOrAPWY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
