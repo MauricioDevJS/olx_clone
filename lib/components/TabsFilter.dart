@@ -9,11 +9,35 @@ class TabsFilter extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Row(
-            children: [
-              Container(padding: EdgeInsets.symmetric(vertical: 15), width: MediaQuery.of(context).size.width / 3, child: Text('Teste', textAlign: TextAlign.center,), decoration: BoxDecoration(color: Colors.white),),
-              Container(padding: EdgeInsets.symmetric(vertical: 15), width: MediaQuery.of(context).size.width / 3, child: Text('Teste', textAlign: TextAlign.center,), decoration: BoxDecoration(color: Colors.white),),
-              Container(padding: EdgeInsets.symmetric(vertical: 15), width: MediaQuery.of(context).size.width / 3, child: Text('Teste', textAlign: TextAlign.center,), decoration: BoxDecoration(color: Colors.white),),
-            ],
-          );
+      children: [
+        Container(
+          padding: EdgeInsets.symmetric(vertical: 15),
+          width: MediaQuery.of(context).size.width / 3,
+          child: Text(
+            'Teste',
+            textAlign: TextAlign.center,
+          ),
+          decoration: BoxDecoration(color: Colors.white),
+        ),
+        Container(
+          padding: EdgeInsets.symmetric(vertical: 15),
+          width: MediaQuery.of(context).size.width / 3,
+          child: Text(
+            'Categorias',
+            textAlign: TextAlign.center,
+          ),
+          decoration: BoxDecoration(color: Colors.white),
+        ),
+        Container(
+          padding: EdgeInsets.symmetric(vertical: 15),
+          width: MediaQuery.of(context).size.width / 3,
+          child: Text(
+            'Teste',
+            textAlign: TextAlign.center,
+          ),
+          decoration: BoxDecoration(color: Colors.white),
+        ),
+      ],
+    );
   }
 }

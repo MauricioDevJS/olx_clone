@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:ssclassificados/pages/LoginPage.dart';
 
 import '../components/ListItens.dart';
@@ -12,38 +11,30 @@ class HomePage extends StatefulWidget {
   State<HomePage> createState() => _HomePageState();
 }
 
-
-  bool isLoggeed = true;
+bool isLoggeed = true;
 
 class _HomePageState extends State<HomePage> {
-
-
-
-
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
 
-      Future.delayed(Duration.zero, (){
-        if (isLoggeed == false) {
-      Navigator.push(
-        context,
-        MaterialPageRoute(
-          builder: (context) => LoginPage(),
-        ),
-      );
-    }
-      });
-
-      
+    Future.delayed(Duration.zero, () {
+      if (isLoggeed == false) {
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => LoginPage(),
+          ),
+        );
+      }
+    });
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('SS Classificados'),
+        title: Text('OLXis'),
         actions: [
           IconButton(
             onPressed: null,
