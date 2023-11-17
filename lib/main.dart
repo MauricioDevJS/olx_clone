@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
-import 'package:ssclassificados/pages/CategoriesList.dart';
+import 'package:ssclassificados/pages/LoginPage.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -28,7 +28,7 @@ void main() async {
 
   runApp(
     MaterialApp(
-      home: CategoriesList(),
+      home: LoginPage(),
       debugShowCheckedModeBanner: false,
       theme: ThemeData(primarySwatch: Colors.deepPurple),
     ),

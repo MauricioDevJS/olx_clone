@@ -29,6 +29,11 @@ class ListItens extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
+                        IconButton(
+                          alignment: Alignment.topLeft,
+                          onPressed: null,
+                          icon: Icon(Icons.favorite_border),
+                        ),
                         Text(
                           'Xbox One X',
                           style: TextStyle(

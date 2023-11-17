@@ -1,5 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class CategoriesList extends StatefulWidget {
@@ -24,7 +25,11 @@ class _CategoriesListState extends State<CategoriesList> {
             itemCount: snapshot.data.length,
             itemBuilder: (context, index) {
               return ListTile(
-                title: Text(snapshot.data[index]['name']),
+                leading: Icon(CupertinoIcons.car_detailed),
+                title: Text(
+                  snapshot.data[index]['name'],
+                  style: TextStyle(fontSize: 20),
+                ),
               );
             },
           );

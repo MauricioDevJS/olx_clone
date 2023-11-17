@@ -13,28 +13,37 @@ class TabsFilter extends StatelessWidget {
         Container(
           padding: EdgeInsets.symmetric(vertical: 15),
           width: MediaQuery.of(context).size.width / 3,
-          child: Text(
-            'Teste',
-            textAlign: TextAlign.center,
-          ),
+          child: Text('Localização',
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+                color: Colors.deepPurple,
+                fontSize: 18,
+              )),
           decoration: BoxDecoration(color: Colors.white),
         ),
         Container(
           padding: EdgeInsets.symmetric(vertical: 15),
           width: MediaQuery.of(context).size.width / 3,
-          child: Text(
-            'Categorias',
-            textAlign: TextAlign.center,
-          ),
+          child: Text('Categorias',
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+                color: Colors.deepPurple,
+                fontSize: 18,
+              )),
           decoration: BoxDecoration(color: Colors.white),
         ),
         Container(
           padding: EdgeInsets.symmetric(vertical: 15),
           width: MediaQuery.of(context).size.width / 3,
-          child: Text(
-            'Teste',
-            textAlign: TextAlign.center,
-          ),
+          child: Text('Filtros',
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+                color: Colors.deepPurple,
+                fontSize: 18,
+              )),
           decoration: BoxDecoration(color: Colors.white),
         ),
       ],

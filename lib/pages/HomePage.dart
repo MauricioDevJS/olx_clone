@@ -55,10 +55,11 @@ class _HomePageState extends State<HomePage> {
           child: ListView(
         children: [
           UserAccountsDrawerHeader(
-            accountName: Text('wwwwwwwwwww'),
-            accountEmail: Text('www'),
+            accountName: Text('Mauricio Cardoso Oliveira'),
+            accountEmail: Text('mauricio@gmail.com'),
             currentAccountPicture: CircleAvatar(
-              child: Text('W'),
+              child: Image.network(
+                  'https://static.vecteezy.com/ti/vetor-gratis/p3/4819327-avatar-masculino-perfil-icone-de-homem-caucasiano-sorridente-vetor.jpg'),
             ),
           ),
         ],
