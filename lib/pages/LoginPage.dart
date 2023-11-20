@@ -14,6 +14,7 @@ class _LoginPageState extends State<LoginPage> {
   final FirebaseAuth _auth = FirebaseAuth.instance;
   final TextEditingController emailController = TextEditingController();
   final TextEditingController passwordController = TextEditingController();
+  bool _passwordVisible = false;
 
   void signIn() async {
     try {
@@ -42,7 +43,6 @@ class _LoginPageState extends State<LoginPage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            FlutterLogo(size: 250),
             Padding(
               padding: const EdgeInsets.all(12.0),
               child: Column(
@@ -57,15 +57,34 @@ class _LoginPageState extends State<LoginPage> {
                   SizedBox(
                     height: 10,
                   ),
-                  TextField(
+                  SizedBox(
+                    height: 10,
+                  ),
+                  SizedBox(height: 10),
+                  TextFormField(
                     controller: passwordController,
+                    obscureText: !_passwordVisible,
                     decoration: InputDecoration(
                       border: OutlineInputBorder(),
                       labelText: 'Senha',
+                      suffixIcon: IconButton(
+                        icon: Icon(
+                          _passwordVisible
+                              ? Icons.visibility
+                              : Icons.visibility_off,
+                        ),
+                        onPressed: () {
+                          setState(() {
+                            _passwordVisible = !_passwordVisible;
+                          });
+                        },
+                      ),
                     ),
                   ),
-                  SizedBox(
-                    height: 10,
+                  SizedBox(height: 10),
+                  TextButton(
+                    onPressed: () {},
+                    child: Text('Esqueceu sua senha?'),
                   ),
                   ElevatedButton(
                     onPressed: signIn,
